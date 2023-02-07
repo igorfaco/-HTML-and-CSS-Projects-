@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+            background-color:blue;
+            color: #914747;
+            document.write(`<strong>Hello, welcome to my page</strong>`);
+        }
+    </style>
+</head>
+<body>   
+     <button onclick="My_First_Function()">Click me!</button>
+<p id="Irish"></p>
+
+    <script>
+    
+        function My_First_Function() {
+            var string = "Kiss me, I`m Irish!";
+            document.getElementById("Irish").innerHTML = "<u>" + string + "</u>";
+            document.getElementById("Irish").style.color = "green";
+    
+        }
+         
+        alert("Hello, welcome to my page");
+        var nome = window.prompt('What is your name?')
+        document.write(`hello, <strong><i> ${nome}</i></strong>! your name has ${nome.length} letters. <br/>`)
+        document.write(`Your name in capital letters is ${nome.toUpperCase()} <br/>`)
+        document.write(`Your name in lower letters is ${nome.toLowerCase()} <br/>`)
+    </script>
+
+<img sc="image.jpg" alt="I wish you could see this">
+
+</body>
+</html>
